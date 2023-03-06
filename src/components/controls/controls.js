@@ -34,31 +34,15 @@ function Controls({mapOn, frequenciesOn, measurementsOn, mobileDisplay}) {
     <ControlsContainer>
       <ChooseDataset />
 
-      <AnnotatedHeader title={t("sidebar:Date Range")} tooltip={DateRangeInfo} mobile={mobileDisplay}/>
-      <DateRangeInputs />
-      <AnimationControls />
+      <AnnotatedHeader title={t("sidebar:Filter Data")} tooltip={FilterInfo} mobile={mobileDisplay}/>
+      <FilterData measurementsOn={measurementsOn} />
 
       <AnnotatedHeader title={t("sidebar:Color By")} tooltip={ColorByInfo} mobile={mobileDisplay}/>
       <ColorBy />
 
-      <AnnotatedHeader title={t("sidebar:Filter Data")} tooltip={FilterInfo} mobile={mobileDisplay}/>
-      <FilterData measurementsOn={measurementsOn} />
-
       <AnnotatedHeader title={t("sidebar:Tree Options")} tooltip={TreeOptionsInfo} mobile={mobileDisplay}/>
-      <ChooseLayout />
-      <ChooseMetric />
       <ChooseBranchLabelling />
       <ChooseTipLabel />
-      <ChooseSecondTree />
-      <ChooseExplodeAttr tooltip={ExplodeTreeInfo} mobile={mobileDisplay} />
-      <ToggleTangle />
-
-      {measurementsOn ? (
-        <span style={{ marginTop: "10px" }}>
-          <AnnotatedHeader title={t("sidebar:Measurements Options")} tooltip={MeasurementsOptionsInfo} mobile={mobileDisplay}/>
-          <MeasurementsOptions />
-        </span>
-      ) : null}
 
       {mapOn ? (
         <span style={{ marginTop: "10px" }}>
@@ -75,10 +59,27 @@ function Controls({mapOn, frequenciesOn, measurementsOn, mobileDisplay}) {
         </span>
       ) : null}
 
-      <span style={{ marginTop: "10px" }}>
+{/*   <AnnotatedHeader title={t("sidebar:Date Range")} tooltip={DateRangeInfo} mobile={mobileDisplay}/>
+      <DateRangeInputs />
+      <AnimationControls />*/}
+
+{/*   <ChooseLayout />
+      <ChooseMetric />
+      <ChooseSecondTree />
+      <ChooseExplodeAttr tooltip={ExplodeTreeInfo} mobile={mobileDisplay} />
+      <ToggleTangle />*/}
+
+{/*   {measurementsOn ? (
+        <span style={{ marginTop: "10px" }}>
+          <AnnotatedHeader title={t("sidebar:Measurements Options")} tooltip={MeasurementsOptionsInfo} mobile={mobileDisplay}/>
+          <MeasurementsOptions />
+        </span>
+      ) : null}*/}
+
+{/*   <span style={{ marginTop: "10px" }}>
         <AnnotatedHeader title={t("sidebar:Animation Options")} tooltip={AnimationOptionsInfo} mobile={mobileDisplay}/>
         <AnimationOptions />
-      </span>
+      </span>*/}
 
       <span style={{ paddingTop: "10px" }} />
       <AnnotatedHeader title={t("sidebar:Panel Options")} tooltip={PanelOptionsInfo} mobile={mobileDisplay}/>
