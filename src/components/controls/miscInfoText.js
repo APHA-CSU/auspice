@@ -4,10 +4,9 @@ import React from "react";
 export const TreeOptionsInfo = (
   <>
     Change various options relating to how the tree is displayed.
-    The exact options available depend on the dataset and specific analysis performed.
     <br/>
-    If <em>Branch Length</em> is available, you can choose to display the tree branches in terms of (nucleotide) divergence or (inferred) time.
-    It is often helpful to toggle on <em>confidence intervals</em> to gauge the uncertainty in the reconstruction of internal node dates.
+    Use the <em>Branch Labels</em> drop-down to display number of SNPs for each branch. Toggle the slider to show all values, but this may obscure other information.
+    Use the <em>Tip Labels</em> drop-down to select which information is used to label the branches (e.g. Submission (AF) number, Eartag, CPH, etc).
   </>
 );
 
