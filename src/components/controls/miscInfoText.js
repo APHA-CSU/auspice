@@ -31,23 +31,23 @@ export const PanelOptionsInfo = (
 );*/
 
 
-export const FrequencyInfo = (
+/*export const FrequencyInfo = (
   <>
     <em>Normalize frequencies</em> controls whether the vertical axis represents the entire dataset or only the samples currently visible (e.g. due to filtering).
     This option is not available when data is limited to prevent numerical issues.
   </>
-);
+);*/
 
-export const MeasurementsOptionsInfo = (
+/*export const MeasurementsOptionsInfo = (
   <>
     Change collection of measurements and various display options for the collection.
   </>
-);
+);*/
 
-export const ExplodeTreeInfo = (
+/*export const ExplodeTreeInfo = (
   <>This functionality is experimental and should be treated with caution!
     <br/>Exploding a tree by trait X means that for each branch where the trait changes value, we will
     prune off the branch and create a separate (sub)tree.
     It works best when the trait doesn&apos;t change value too frequently.
   </>
-);
+);*/
