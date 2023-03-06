@@ -58,6 +58,12 @@ function Controls({mapOn, frequenciesOn, measurementsOn, mobileDisplay}) {
           <NormalizeFrequencies />
         </span>
       ) : null}
+      
+      <span style={{ paddingTop: "10px" }} />
+      <AnnotatedHeader title={t("sidebar:Panel Options")} tooltip={PanelOptionsInfo} mobile={mobileDisplay}/>
+      <PanelLayout />
+      <PanelToggles />
+      <Language />
 
 {/*   <AnnotatedHeader title={t("sidebar:Date Range")} tooltip={DateRangeInfo} mobile={mobileDisplay}/>
       <DateRangeInputs />
@@ -81,11 +87,6 @@ function Controls({mapOn, frequenciesOn, measurementsOn, mobileDisplay}) {
         <AnimationOptions />
       </span>*/}
 
-      <span style={{ paddingTop: "10px" }} />
-      <AnnotatedHeader title={t("sidebar:Panel Options")} tooltip={PanelOptionsInfo} mobile={mobileDisplay}/>
-      <PanelLayout />
-      <PanelToggles />
-      <Language />
     </ControlsContainer>
   );
 }
