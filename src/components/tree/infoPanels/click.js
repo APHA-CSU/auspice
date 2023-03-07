@@ -2,9 +2,9 @@ import React from "react";
 import { isValueValid } from "../../../util/globals";
 import { infoPanelStyles } from "../../../globalStyles";
 import { numericToCalendar } from "../../../util/dateHelpers";
-import { getTraitFromNode, getFullAuthorInfoFromNode, getVaccineFromNode,
-  getAccessionFromNode, getUrlFromNode } from "../../../util/treeMiscHelpers";
-import { MutationTable } from "./MutationTable";
+import { getTraitFromNode, /*getFullAuthorInfoFromNode, getVaccineFromNode,
+getAccessionFromNode, getUrlFromNode*/ } from "../../../util/treeMiscHelpers";
+//import { MutationTable } from "./MutationTable";
 
 export const styles = {
   container: {
@@ -269,7 +269,7 @@ const NodeClickedPanel = ({selectedNode, clearSelectedNode, colorings, observedM
             {item("", "")}
           </tbody>
         </table>
-        <MutationTable node={node} geneSortFn={geneSortFn} isTip={isTip} observedMutations={observedMutations}/>
+        {/*<MutationTable node={node} geneSortFn={geneSortFn} isTip={isTip} observedMutations={observedMutations}/>*/}
         <p style={infoPanelStyles.comment}>
           {t("Click outside this box to go back to the tree")}
         </p>
