@@ -12,8 +12,9 @@ import Language from "./language";
 import { ControlsContainer } from "./styles";
 import FilterData, {FilterInfo} from "./filter";
 import { AnnotatedHeader } from "./annotatedHeader";
-import {TreeOptionsInfo, MapOptionsInfo, PanelOptionsInfo, FrequencyInfo/* AnimationOptionsInfo, 
-ExplodeTreeInfo,, MeasurementsOptionsInfo*/} from "./miscInfoText";
+import {TreeOptionsInfo, MapOptionsInfo, PanelOptionsInfo} from "./miscInfoText";
+/*, FrequencyInfo, AnimationOptionsInfo, 
+ExplodeTreeInfo,, MeasurementsOptionsInfo*/
 
 //import DateRangeInputs, {DateRangeInfo} from "./date-range-inputs";
 //import AnimationControls from "./animation-controls";
@@ -48,16 +49,16 @@ function Controls({mapOn, frequenciesOn, measurementsOn, mobileDisplay}) {
         <span style={{ marginTop: "10px" }}>
           <AnnotatedHeader title={t("sidebar:Map Options")} tooltip={MapOptionsInfo} mobile={mobileDisplay}/>
           <GeoResolution />
-          <TransmissionLines />
+          {/*<TransmissionLines />*/}
         </span>
       ) : null}
 
-      {frequenciesOn ? (
+      {/*{frequenciesOn ? (
         <span style={{ marginTop: "10px" }}>
           <AnnotatedHeader title={t("sidebar:Frequency Options")} tooltip={FrequencyInfo} mobile={mobileDisplay}/>
           <NormalizeFrequencies />
         </span>
-      ) : null}
+      ) : null}*/}
       
       <span style={{ paddingTop: "10px" }} />
       <AnnotatedHeader title={t("sidebar:Panel Options")} tooltip={PanelOptionsInfo} mobile={mobileDisplay}/>
