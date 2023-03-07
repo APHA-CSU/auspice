@@ -52,10 +52,10 @@ const Link = ({url, title, value}) => (
   </tr>
 );
 
-const AccessionAndUrl = ({node}) => {
+/*const AccessionAndUrl = ({node}) => {
   /* If `gisaid_epi_isl` or `genbank_accession` exist as node attrs, these preempt normal use of `accession` and `url`.
   These special values were introduced during the SARS-CoV-2 pandemic. */
-  const gisaid_epi_isl = getTraitFromNode(node, "gisaid_epi_isl");
+/*  const gisaid_epi_isl = getTraitFromNode(node, "gisaid_epi_isl");
   const genbank_accession = getTraitFromNode(node, "genbank_accession");
   let gisaid_epi_isl_url = null;
   let genbank_accession_url = null;
@@ -106,10 +106,10 @@ const AccessionAndUrl = ({node}) => {
     );
   }
   return null;
-};
+};*/
 
 
-const VaccineInfo = ({node, t}) => {
+/*const VaccineInfo = ({node, t}) => {
   const vaccineInfo = getVaccineFromNode(node);
   if (!vaccineInfo) return null;
   const renderElements = [];
@@ -146,9 +146,9 @@ const VaccineInfo = ({node, t}) => {
     );
   }
   return renderElements;
-};
+};*/
 
-const PublicationInfo = ({node, t}) => {
+/*const PublicationInfo = ({node, t}) => {
   const info = getFullAuthorInfoFromNode(node);
   if (!info) return null;
 
@@ -165,7 +165,7 @@ const PublicationInfo = ({node, t}) => {
     itemsToRender.push(item(t("Journal"), info.journal));
   }
   return (itemsToRender.length === 1 ? itemsToRender[0] : itemsToRender);
-};
+};*/
 
 const StrainName = ({children}) => (
   <p style={infoPanelStyles.modalHeading}>{children}</p>
@@ -223,11 +223,11 @@ const Trait = ({node, trait, colorings, isTerminal}) => {
     return item(name, numericToCalendar(value));
   }
 
-  const url = getUrlFromNode(node, trait);
+  /*const url = getUrlFromNode(node, trait);
   if (url) {
     return <Link title={name} url={url} value={value}/>;
   }
-  return item(name, value);
+  return item(name, value);*/
 };
 
 /**
@@ -237,7 +237,7 @@ const Trait = ({node, trait, colorings, isTerminal}) => {
  * @param  {function} props.goAwayCallback
  * @param  {object}   props.colorings
  */
-const NodeClickedPanel = ({selectedNode, clearSelectedNode, colorings, observedMutations, geneSortFn, t}) => {
+const NodeClickedPanel = ({selectedNode, clearSelectedNode, colorings, /*observedMutations, geneSortFn,*/ t}) => {
   if (selectedNode.event!=="click") {return null;}
   const panelStyle = { ...infoPanelStyles.panel};
   panelStyle.maxHeight = "70%";
