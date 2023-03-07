@@ -166,11 +166,11 @@ const TipMutations = ({node, t}) => {
     });
   let ntSummary = `${nucCounts.changes}${nucCounts.reversionsToRoot ? ` + ${nucCounts.reversionsToRoot} reversions to root`: ''}`;
   ntSummary += `${nucCounts.gaps ? ` + ${nucCounts.gaps} gaps`: ''}${nucCounts.nt ? ` + ${nucCounts.nt} Ns`: ''}`;
-  let aaSummary = `${aaCounts.changes}${aaCounts.reversionsToRoot ? ` + ${aaCounts.reversionsToRoot} reversions to root`: ''}`;
-  aaSummary += `${aaCounts.gaps ? ` + ${aaCounts.gaps} gaps`: ''}`;
+  /*let aaSummary = `${aaCounts.changes}${aaCounts.reversionsToRoot ? ` + ${aaCounts.reversionsToRoot} reversions to root`: ''}`;
+  aaSummary += `${aaCounts.gaps ? ` + ${aaCounts.gaps} gaps`: ''}`;*/
   return [
     <InfoLine name={t("Nucleotide changes")+":"} value={ntSummary} key="nuc"/>,
-    <InfoLine name={t("Amino Acid changes")+":"} value={aaSummary} key="aa"/>
+    //<InfoLine name={t("Amino Acid changes")+":"} value={aaSummary} key="aa"/>
   ];
 };
 
