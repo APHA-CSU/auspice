@@ -3,9 +3,10 @@ import React from "react";
 
 export const TreeOptionsInfo = (
   <>
-    Change various options relating to how the tree is displayed.
+    Change various options relating to what information is displayed on the tree.
     <br/>
     Use the <em>Branch Labels</em> drop-down to display number of SNPs for each branch. Toggle the slider to show all values, but this may obscure other information.
+    <br/>
     Use the <em>Tip Labels</em> drop-down to select which information is used to label the branches (e.g. Submission (AF) number, Eartag, CPH, etc).
   </>
 );
