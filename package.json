@@ -1,14 +1,14 @@
 {
   "name": "auspice",
-  "version": "2.44.0",
+  "version": "2.45.0",
   "description": "Web app for visualizing pathogen evolution",
   "author": "James Hadfield, Trevor Bedford and Richard Neher",
   "license": "AGPL-3.0-only",
   "repository": "github:nextstrain/auspice",
   "homepage": "https://www.npmjs.com/package/auspice",
   "engines": {
-    "node": "^12 || ^14 || ^16",
-    "npm": "^7 || ^8"
+    "node": "^14 || ^16 || ^18",
+    "npm": "^7 || ^8 || ^9"
   },
   "bin": {
     "auspice": "./auspice.js"
