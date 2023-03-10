@@ -33,7 +33,7 @@ const addParser = (parser) => {
 const run = (args) => {
   /* Basic server set up */
   const app = express();
-  app.set('port', process.env.PORT || 4000);
+  app.set('port', process.env.PORT || 4001);
   app.set('host', process.env.HOST || "localhost");
 
   const baseDir = path.resolve(__dirname, "..");
