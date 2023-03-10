@@ -216,8 +216,8 @@ class FilterData extends React.Component {
 
 export const FilterInfo = (
   <>
-    {`Use this box to filter the displayed data based upon filtering criteria.
-    For instance, start typing a country's name to filter the data accordingly.`}
+    {`Use this box to search for samples of interest by filtering the displayed data.
+    For instance, start typing a CPH number to filter the data accordingly.`}
     <br/>
     Data is filtered by forming a union of selected values within each category, and then
     taking the intersection between categories (if more than one category is selected).
@@ -225,8 +225,8 @@ export const FilterInfo = (
     Scroll to the bottom of the main page (under the data visualisation)
     to see an expanded display of filters and available values.
     <br/>
-    Filter options prefixed with &quot;(M)&quot; are filters specific to the Measurements panel.
-    They will have no effect on the phylogeny tree or other panels.
+    {/*Filter options prefixed with &quot;(M)&quot; are filters specific to the Measurements panel.
+    They will have no effect on the phylogeny tree or other panels.*/}
   </>
 );
 
