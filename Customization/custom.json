@@ -1,0 +1,21 @@
+{
+  "sidebarTheme": {
+    "background": "#F2F2F2",
+    "color": "#000",
+    "sidebarBoxShadow": "rgba(0, 0, 0, 0.2)",
+    "font-family": "Arial",
+    "selectedColor": "#00AF41",
+    "unselectedColor": "#333",
+    "unselectedBackground": "#888"
+  },
+  "navbarComponent": "navbar.js",
+  "splashComponent": "splash.js",
+  "sidebarComponent": "sidebar.js",
+  "browserTitle": "APHA ViewBovis",
+  "mapTiles": {
+    "api": "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+    "mapboxWordmark": false
+  }
+}
+
