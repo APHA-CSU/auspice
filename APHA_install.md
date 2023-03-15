@@ -26,8 +26,9 @@ Run Auspice Build to add APHA specific customizations.  This only needs to be
 done for the first use of when changes are made to the repo.
 
 `mkdir ../nextstrain && cd ../nextstrain`
-`auspice build --extend Customization/custom.json`
+`auspice build --extend ../auspice/Customization/custom.json`
 
-Run auspice to diplay data on *localhost*
+Run auspice to diplay data on *localhost*.  This needs to be run from the
+directory where auspice build was run (i.e. nextstrain/ )
 
 `auspice view --datasetDir <path to json files>`
