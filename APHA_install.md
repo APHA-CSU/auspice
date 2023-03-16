@@ -4,9 +4,9 @@ Install Node Version Manager (nvm)
 
 `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
 
-Install node.js v16 (the latest supported by Auspice)
+Install node.js v18 (the latest supported by Auspice)
 
-`nvm install 16`
+`nvm install 18`
 
 Clone Auspice repo
 
