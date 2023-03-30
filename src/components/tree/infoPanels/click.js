@@ -192,7 +192,7 @@ const getTraitsToDisplay = (node) => {
   // TODO -- this should be centralised somewhere
   if (!node.node_attrs) return [];
   const ignore = ["author", "div", "num_date", "gisaid_epi_isl", "genbank_accession", "accession", "url"];
-  return Object.keys(node.node_attrs).filter((k) => !ignore.includes(k));
+  return Object.keys(node.node_attrs).sort().filter((k) => !ignore.includes(k));
 };
 
 const Trait = ({node, trait, colorings, isTerminal}) => {
