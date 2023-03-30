@@ -244,7 +244,7 @@ export const infoPanelStyles = {
   },
   comment: {
     fontStyle: "italic",
-    fontWeight: 200,
+    fontWeight: 300,
     fontSize: 14,
     marginTop: "10px"
   },
