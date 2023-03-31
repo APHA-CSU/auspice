@@ -411,8 +411,8 @@ const HoverInfoPanel = ({
         <>
           <StrainName name={node.name}/>
           <VaccineInfo node={node} t={t}/>
-          <TipMutations node={node} t={t}/>
-          <BranchLength node={node} t={t}/>
+          {/*<TipMutations node={node} t={t}/>
+          <BranchLength node={node} t={t}/>*/}
           <ColorBy node={node} colorBy={colorBy} colorByConfidence={colorByConfidence} colorScale={colorScale} colorings={colorings}/>
           <AttributionInfo node={node}/>
           <Comment>{t("Click on tip to display more info")}</Comment>
@@ -420,7 +420,7 @@ const HoverInfoPanel = ({
       ) : (
         <>
           <BranchDescendents node={node} t={t}/>
-          <BranchMutations node={node} geneSortFn={geneSortFn} observedMutations={observedMutations} t={t}/>
+          {/*<BranchMutations node={node} geneSortFn={geneSortFn} observedMutations={observedMutations} t={t}/>*/}
           <BranchLength node={node} t={t}/>
           <ColorBy node={node} colorBy={colorBy} colorByConfidence={colorByConfidence} colorScale={colorScale} colorings={colorings}/>
           <Comment>
