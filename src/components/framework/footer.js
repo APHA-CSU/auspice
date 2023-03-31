@@ -154,30 +154,30 @@ const FooterStyles = styled.div`
 
 `;
 
-export const getAcknowledgments = (metadata, dispatch) => {
+//export const getAcknowledgments = (metadata, dispatch) => {
   /**
    * If the metadata contains a description key, then it will take precedence the hard-coded
    * acknowledgements. Expects the text in the description to be in Markdown format.
    * Jover. December 2019.
   */
-  if (metadata.description) {
-    return (
-      <Suspense fallback={<div />}>
-        <MarkdownDisplay className="acknowledgments" mdstring={metadata.description} />
-      </Suspense>
-    );
-  }
+//  if (metadata.description) {
+//    return (
+//      <Suspense fallback={<div />}>
+//        <MarkdownDisplay className="acknowledgments" mdstring={metadata.description} />
+//      </Suspense>
+//   );
+//  }
+//
+  //const preambleContent = "This work is made possible by the open sharing of genetic data by research groups from all over the world. We gratefully acknowledge their contributions.";
+  //const genericPreamble = (<div>{preambleContent}</div>);
+//
+  //if (window.location.hostname === 'nextstrain.org') {
+  //  return hardCodedFooters(dispatch, genericPreamble);
+  //}
 
-  const preambleContent = "This work is made possible by the open sharing of genetic data by research groups from all over the world. We gratefully acknowledge their contributions.";
-  const genericPreamble = (<div>{preambleContent}</div>);
+  //return (<div>{genericPreamble}</div>);
 
-  if (window.location.hostname === 'nextstrain.org') {
-    return hardCodedFooters(dispatch, genericPreamble);
-  }
-
-  return (<div>{genericPreamble}</div>);
-
-};
+//};
 
 const dispatchFilter = (dispatch, activeFilters, key, value) => {
   const activeValuesOfFilter = activeFilters[key].map((f) => f.value);
@@ -290,8 +290,8 @@ class Footer extends React.Component {
     return (
       <FooterStyles>
         <div style={{width: width}}>
-          <div className='line'/>
-          {getAcknowledgments(this.props.metadata, this.props.dispatch)}
+{/*          <div className='line'/>
+          {getAcknowledgments(this.props.metadata, this.props.dispatch)}*/}
           <div className='line'/>
           {Object.keys(this.props.activeFilters)
             .filter((name) => this.props.filtersInFooter.includes(name))
