@@ -5,7 +5,7 @@ import { withTranslation } from 'react-i18next';
 import { TRIGGER_DOWNLOAD_MODAL, DISMISS_DOWNLOAD_MODAL } from "../../actions/types";
 import { infoPanelStyles } from "../../globalStyles";
 import { stopProp } from "../tree/infoPanels/click";
-import { getAcknowledgments} from "../framework/footer";
+//import { getAcknowledgments} from "../framework/footer";
 import { datasetSummary } from "../info/datasetSummary";
 import { DownloadButtons } from "./downloadButtons";
 
@@ -171,12 +171,12 @@ class DownloadModal extends React.Component {
               t: this.props.t
             })}
           </div>
-          <div style={infoPanelStyles.break}/>
+          {/*<div style={infoPanelStyles.break}/>
           {" " + t("A full list of sequence authors is available via the TSV files below")}
           <div style={infoPanelStyles.break}/>
-          {getAcknowledgments({}, {preamble: {fontWeight: 300}, acknowledgments: {fontWeight: 300}})}
+          {getAcknowledgments({}, {preamble: {fontWeight: 300}, acknowledgments: {fontWeight: 300}})}*/}
 
-          <div style={infoPanelStyles.modalSubheading}>
+          {/*<div style={infoPanelStyles.modalSubheading}>
             {t("Data usage policy")}
           </div>
           {t("Data usage part 1") + " " + t("Data usage part 2")}
@@ -184,7 +184,7 @@ class DownloadModal extends React.Component {
           <div style={infoPanelStyles.modalSubheading}>
             {t("Please cite the authors who contributed genomic data (where relevant), as well as")+":"}
           </div>
-          {this.formatPublications(relevantPublications)}
+        {this.formatPublications(relevantPublications)}*/}
 
 
           <div style={infoPanelStyles.modalSubheading}>

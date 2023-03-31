@@ -41,9 +41,9 @@ export const DownloadButtons = ({dispatch, t, tree, entropy, metadata, colorBy, 
         Downloaded data represents the currently displayed view.
         By zooming the tree, changing the branch-length metric, applying filters etc, the downloaded data will change accordingly.
         <p/>
-        NOTE: We do not support downloads of multiple subtrees, which are usually created with the date range filter or genotype filters.
+        {/*NOTE: We do not support downloads of multiple subtrees, which are usually created with the date range filter or genotype filters.
         Downloading multiple subtrees will result in an empty Newick tree!
-        <p/>
+  <p/>*/}
         {partialData ? `Currently ${selectedTipsCount}/${totalTipCount} tips are displayed and will be downloaded.` : `Currently the entire dataset (${totalTipCount} tips) will be downloaded.`}
       </div>
       <Button
@@ -82,14 +82,14 @@ export const DownloadButtons = ({dispatch, t, tree, entropy, metadata, colorBy, 
           onClick={() => helpers.authorTSV(dispatch, filePrefix, tree)}
         />
       )}
-      {entropy.loaded && (
+      {/*{entropy.loaded && (
         <Button
           name="Genetic diversity data (TSV)"
           description={`The data behind the diversity panel showing ${entropy.showCounts?`a count of changes across the tree`:`normalised shannon entropy`} per ${mutType==="nuc"?"nucleotide":"codon"}.`}
           icon={<MetaIcon width={iconWidth} selected />}
           onClick={() => helpers.entropyTSV(dispatch, filePrefix, entropy, mutType)}
         />
-      )}
+      )}*/}
       <Button
         name="Screenshot (SVG)"
         description="Screenshot of the current nextstrain display in SVG format; CC-BY licensed."

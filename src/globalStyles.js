@@ -250,7 +250,7 @@ export const infoPanelStyles = {
   },
   topRightMessage: {
     fontStyle: "italic",
-    fontWeight: 200,
+    fontWeight: 300,
     fontSize: 14,
     textAlign: "right",
     marginTop: "-20px"
