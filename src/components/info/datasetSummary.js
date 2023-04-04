@@ -55,7 +55,7 @@ export const datasetSummary = ({nodes, visibility, mainTreeNumTips, branchLength
   let summary = ""; /* text returned from this function */
 
   /* Number of genomes & their date range */
-  if (branchLengthsToDisplay !== "divOnly" && nSelectedSamples > 0) {
+  /*if (branchLengthsToDisplay !== "divOnly" && nSelectedSamples > 0) {
     summary += t(
       "Showing {{x}} of {{y}} genomes sampled between {{from}} and {{to}}",
       {
@@ -65,9 +65,10 @@ export const datasetSummary = ({nodes, visibility, mainTreeNumTips, branchLength
         to: styliseDateRange(sampledDateRange[1])
       }
     );
-  } else {
+  } else */
+  {
     summary += t(
-      "Showing {{x}} of {{y}} genomes",
+      "Showing {{x}} of {{y}} genomes available for this clade",
       {x: nSelectedSamples, y: mainTreeNumTips}
     );
   }
