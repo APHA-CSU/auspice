@@ -1,7 +1,7 @@
 /* eslint-disable no-multi-spaces */
 import React from "react";
 import styled from 'styled-components';
-import { normalNavBarHeight, narrativeNavBarHeight } from "../../util/globals";
+import { normalNavBarHeight } from "../../util/globals";
 import SidebarChevron from "../framework/sidebar-chevron";
 import { AuspiceNavBar } from "./content";
 import { hasExtension, getExtension } from "../../util/extensions";
@@ -13,7 +13,7 @@ const NavBarContainer = styled.div`
   margin-right: auto;
   margin-bottom: auto;
   margin-left: auto;
-  height: ${(props) => props.narrative ? narrativeNavBarHeight : normalNavBarHeight}px;
+  height: 0;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
@@ -30,11 +30,6 @@ const NavBar = ({sidebar, toggleHandler, narrativeTitle, width}) => {
   const showSidebarToggle = sidebar && !narrativeTitle;
   return (
     <NavBarContainer>
-      <Content
-        narrativeTitle={narrativeTitle}
-        sidebar={sidebar}
-        width={width}
-      />
       <SidebarChevron navHeight={normalNavBarHeight} navWidth={width} display={showSidebarToggle} onClick={toggleHandler}/>
     </NavBarContainer>
   );
