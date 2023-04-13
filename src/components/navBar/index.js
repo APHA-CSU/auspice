@@ -13,7 +13,7 @@ const NavBarContainer = styled.div`
   margin-right: auto;
   margin-bottom: auto;
   margin-left: auto;
-  height: $0px;
+  height: 0;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
