@@ -2,7 +2,6 @@ import React from "react";
 import {ThemeProvider} from 'styled-components';
 import Controls from "../controls/controls";
 import { SidebarContainer, sidebarTheme } from "./styles";
-import SidebarChevron from "../framework/sidebar-chevron";
 import NavBar from "../navBar";
 
 export const Sidebar = (
