@@ -18,7 +18,6 @@ export const Sidebar = (
         />
         <Controls
             mobileDisplay={mobileDisplay}
-            toggleHandler={navBarHandler}
             mapOn={panelsToDisplay.includes("map")}
             frequenciesOn={panelsToDisplay.includes("frequencies")}
             measurementsOn={panelsToDisplay.includes("measurements")}
