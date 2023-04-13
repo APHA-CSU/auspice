@@ -1,7 +1,7 @@
 /* eslint-disable no-multi-spaces */
 import React from "react";
 import styled from 'styled-components';
-import { normalNavBarHeight, narrativeNavBarHeight } from "../../util/globals";
+import { normalNavBarHeight } from "../../util/globals";
 import SidebarChevron from "../framework/sidebar-chevron";
 import { AuspiceNavBar } from "./content";
 import { hasExtension, getExtension } from "../../util/extensions";
