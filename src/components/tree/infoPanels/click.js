@@ -188,11 +188,16 @@ const SampleDate = ({isTerminal, node, t}) => {
   return item(t(isTerminal ? "Collection date" : "Inferred date"), numericToCalendar(date));
 };
 
+var traitOrder = {"CPH":4, "CPH_Type":5, "County":6, "Host":3, "Identifier":1,
+                  "MoveCount":10, "OutsideHomeRange":8, "PreviousMovement":9,
+                  "RiskArea":7, "Submission":2}
+
 const getTraitsToDisplay = (node) => {
   // TODO -- this should be centralised somewhere
   if (!node.node_attrs) return [];
   const ignore = ["author", "div", "num_date", "gisaid_epi_isl", "genbank_accession", "accession", "url"];
-  return Object.keys(node.node_attrs).sort().filter((k) => !ignore.includes(k));
+  return Object.keys(node.node_attrs).sort(function(a,b) { return traitOrder[a] - traitOrder[b]; })
+              .filter((k) => !ignore.includes(k));
 };
 
 const Trait = ({node, trait, colorings, isTerminal}) => {
