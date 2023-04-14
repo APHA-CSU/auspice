@@ -11,7 +11,7 @@
   "navbarComponent": "navbar.js",
   "splashComponent": "splash.js",
   "sidebarComponent": "sidebar.js",
-  "browserTitle": "APHA ViewBovis",
+  "browserTitle": "APHA Nextstrain",
   "mapTiles": {
     "api": "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
     "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
