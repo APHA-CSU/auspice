@@ -396,8 +396,8 @@ export const addGrid = function addGrid() {
     yAxisLabel = this.scatterVariables.yLabel;
     if (yAxisLabel==="div") yAxisLabel = guessAreMutationsPerSite(this.yScale) ? "Divergence" : "Mutations";
   } else if (layout==="rect") {
-    xAxisLabel = this.distance === "num_date" ? "Date" :
-      guessAreMutationsPerSite(this.xScale) ? "Divergence" : "Mutations";
+    xAxisLabel = "Number of SNPs from Outgroup" // === "num_date" ? "Date" :
+      //guessAreMutationsPerSite(this.xScale) ? "Divergence" : "Mutations";
   }
   if (xAxisLabel) {
     this.groups.axisText
