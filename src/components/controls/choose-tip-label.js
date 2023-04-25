@@ -56,6 +56,8 @@ export function collectAvailableTipLabelOptions(colorings) {
      */
     {value: 'none', label: "none"},
     {value: strainSymbol, label: "Sample Name"},
+    {value: 'Submission', label: "Submisssion (e.g. AF ref)"},
+    {value: 'Identifier', label: "Identifier (e.g. Ear Tag)"},
     ...Object.entries(colorings)
       .filter((keyValue) => keyValue[0] !== 'gt' && keyValue[0] !== 'none')
       .map(([key, value]) => {
