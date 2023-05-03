@@ -42,9 +42,9 @@ function Controls({mapOn, frequenciesOn, measurementsOn, mobileDisplay}) {
       <ColorBy />
 
       <AnnotatedHeader title={t("sidebar:Tree Options")} tooltip={TreeOptionsInfo} mobile={mobileDisplay}/>
-      <ChooseBranchLabelling />
       <ChooseTipLabel />
-
+      <ChooseBranchLabelling />
+      
       {mapOn ? (
         <span style={{ marginTop: "10px" }}>
           <AnnotatedHeader title={t("sidebar:Map Options")} tooltip={MapOptionsInfo} mobile={mobileDisplay}/>
