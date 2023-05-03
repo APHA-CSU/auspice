@@ -16,7 +16,7 @@ const SidebarToggle = ({sidebarOpen, mobileDisplay, handler}) => {
     width: mobileDisplay ? 60 : 14,
     height: mobileDisplay ? 60 : 44,
     position: "absolute",
-    top: mobileDisplay ? 15 : 4,
+    top: mobileDisplay ? 15 : 40,
     left: mobileDisplay ? "auto" : 0,
     right: mobileDisplay ? 20 : "auto",
     zIndex: 9000,
