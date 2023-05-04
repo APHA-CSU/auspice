@@ -172,7 +172,7 @@ export const months = {
   '09': 'Sep'
 };
 
-export const normalNavBarHeight = 120;
+export const normalNavBarHeight = 110;
 export const narrativeNavBarHeight = 55;
 
 export const NODE_NOT_VISIBLE = 0;          // branch thickness 0 and excluded from map

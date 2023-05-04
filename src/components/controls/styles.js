@@ -18,7 +18,7 @@ export const ControlsContainer = styled.div`
   flex-shrink: 1;
   flex-basis: auto;
   align-self: auto;
-  padding: 40px 20px 20px 20px;
+  padding: 25px 20px 20px 20px;
 `;
 
 export const HeaderContainer = styled.div`
