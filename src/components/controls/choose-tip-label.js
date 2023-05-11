@@ -59,9 +59,10 @@ export function collectAvailableTipLabelOptions(colorings) {
     {value: 'Submission', label: "Submisssion (e.g. AF ref)"},
     {value: 'Identifier', label: "Identifier (e.g. Ear Tag)"},
     {value: 'CPH', label: "Location (e.g. CPH)"},
-    {value: 'CPH Type', label: "Location Type"},
+    {value: 'CPH_Type', label: "Location Type"},
     ...Object.entries(colorings)
-      .filter((keyValue) => keyValue[0] !== 'gt' && keyValue[0] !== 'none')
+      .filter((keyValue) => keyValue[0] !== 'gt' && keyValue[0] !== 'none'
+                && keyValue[0] !== 'CPH' && keyValue[0] !== 'CPH_Type' )
       .map(([key, value]) => {
         return {value: key, label: value.title};
       })
