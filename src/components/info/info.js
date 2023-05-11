@@ -81,7 +81,7 @@ function computeStyles(width, browserWidth) {
     title: {
       fontFamily: titleFont,
       fontSize: fontSize,
-      marginLeft: 0,
+      marginLeft: 100,
       marginTop: 0,
       marginBottom: 5,
       fontWeight: 500,
@@ -92,7 +92,7 @@ function computeStyles(width, browserWidth) {
     n: {
       fontFamily: headerFont,
       fontSize: 14,
-      marginLeft: 2,
+      marginLeft: 102,
       marginTop: 5,
       marginBottom: 5,
       fontWeight: 500,
@@ -102,7 +102,7 @@ function computeStyles(width, browserWidth) {
     byline: {
       fontFamily: headerFont,
       fontSize: 15,
-      marginLeft: 2,
+      marginLeft: 102,
       marginTop: 5,
       marginBottom: 5,
       fontWeight: 500,
