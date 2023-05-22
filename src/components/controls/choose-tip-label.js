@@ -62,7 +62,7 @@ export function collectAvailableTipLabelOptions(colorings) {
     {value: 'CPH_Type', label: "Location Type"},
     ...Object.entries(colorings)
       .filter((keyValue) => keyValue[0] !== 'gt' && keyValue[0] !== 'none'
-                && keyValue[0] !== 'CPH' && keyValue[0] !== 'CPH_Type' )
+                && keyValue[0] !== 'PreciseLocation' && keyValue[0] !== 'CPH_Type' )
       .map(([key, value]) => {
         return {value: key, label: value.title};
       })
