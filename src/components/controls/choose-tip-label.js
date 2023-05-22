@@ -56,9 +56,9 @@ export function collectAvailableTipLabelOptions(colorings) {
      */
     {value: 'none', label: "none"},
     {value: strainSymbol, label: "Sample Name"},
-    {value: 'Submission', label: "Submisssion (e.g. AF ref)"},
+    {value: 'Submission', label: "Submission (e.g. AF ref)"},
     {value: 'Identifier', label: "Identifier (e.g. Ear Tag)"},
-    {value: 'CPH', label: "Location (e.g. CPH)"},
+    {value: 'PreciseLocation', label: "PreciseLocation (e.g. CPH)"},
     {value: 'CPH_Type', label: "Location Type"},
     ...Object.entries(colorings)
       .filter((keyValue) => keyValue[0] !== 'gt' && keyValue[0] !== 'none'
