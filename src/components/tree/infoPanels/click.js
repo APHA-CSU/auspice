@@ -188,7 +188,7 @@ const SampleDate = ({isTerminal, node, t}) => {
   return item(t(isTerminal ? "Collection date" : "Inferred date"), numericToCalendar(date));
 };
 
-var traitOrder = {"CPH":4, "CPH_Type":5, "County":6, "Host":3, "Identifier":1,
+var traitOrder = {"PreciseLocation":4, "CPH_Type":5, "County":6, "Host":3, "Identifier":1,
                   "MoveCount":10, "OutsideHomeRange":8, "PreviousMovement":9,
                   "RiskArea":7, "Submission":2}
 
