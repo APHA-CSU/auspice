@@ -19,6 +19,7 @@ import {
   updateTransmissionDataLatLong,
   updateDemeDataLatLong
 } from "./mapHelpersLatLong";
+import { MapInfoPanel } from "./mapInfoPanel";
 // import { incommingMapPNG } from "../download/helperFunctions";
 import { timerStart, timerEnd } from "../../util/perf";
 import { tabSingle, darkGrey, lightGrey } from "../../globalStyles";
@@ -619,6 +620,11 @@ class Map extends React.Component {
         {this.props.legend && <ErrorBoundary>
           <Legend right width={this.props.width} />
         </ErrorBoundary>}
+        <MapInfoPanel
+          selectedDeme={this.state.selectedDeme}
+          panelDims={{width: this.props.width, height: this.props.height}}
+          t={t}
+        />
         {this.maybeCreateMapDiv()}
         {this.props.narrativeMode ? null : (
           <button

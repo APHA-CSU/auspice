@@ -5,6 +5,7 @@ import { line, curveBasis, arc } from "d3-shape";
 import { easeLinear } from "d3-ease";
 import { demeCountMultiplier, demeCountMinimum } from "../../util/globals";
 import { updateTipRadii } from "../../actions/tree";
+//import InfoPanel from "./infoPanel";
 
 /* util */
 
@@ -198,8 +199,10 @@ export const drawDemesAndTransmissions = (
       .attr("transform", (d) =>
         "translate(" + demeData[d.demeDataIdx].coords.x + "," + demeData[d.demeDataIdx].coords.y + ")"
       )
-      .on("mouseover", (d) => { dispatch(updateTipRadii({geoFilter: [geoResolution, demeData[d.demeDataIdx].name]})); })
-      .on("mouseout", () => { dispatch(updateTipRadii()); });
+      .on("mouseover", (d) => { dispatch(updateTipRadii({geoFilter: [geoResolution, demeData[d.demeDataIdx].name]})); alert(demeData[d.demeDataIdx].name) })
+      //.InfoPanel()
+      //.on("mouseover", (d) => { alert(demeData[d.demeDataIdx].name) })
+      .on("mouseout", () => { dispatch(updateTipRadii()); alert("Nodes on tree are highlighted") });
   } else {
     demes = g.selectAll("demes") // add deme circles to this selection
       .data(demeData)
@@ -213,6 +216,7 @@ export const drawDemesAndTransmissions = (
       .style("stroke", (d) => { return d.color; })
       .style("pointer-events", "all")
       .attr("transform", (d) => "translate(" + d.coords.x + "," + d.coords.y + ")")
+      //.on("mouseover", (d) => { d.target.openTooltip("help") })
       .on("mouseover", (d) => { dispatch(updateTipRadii({geoFilter: [geoResolution, d.name]})); })
       .on("mouseout", () => { dispatch(updateTipRadii()); });
   }
