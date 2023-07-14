@@ -119,8 +119,7 @@ export const changePage = ({
       type: PAGE_CHANGE,
       path,
       displayComponent: chooseDisplayComponentFromURL(path),
-      pushState: push,
-      query
+      pushState: push
     });
   }
 };
