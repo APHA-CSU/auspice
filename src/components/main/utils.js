@@ -10,7 +10,7 @@ export const calcPanelDims = (panels, narrativeIsDisplayed, availableWidth, avai
 
   let chartHeightFraction = 0.36;
   let fullHeightFraction = 0.88;
-  let gridHeightFraction = 0.64;
+  let gridHeightFraction = 0.80;
 
   if (narrativeIsDisplayed) {
     /* heights */
