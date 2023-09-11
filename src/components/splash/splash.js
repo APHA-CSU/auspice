@@ -73,7 +73,7 @@ const SplashContent = ({available, browserDimensions, dispatch, errorMessage, ch
         </p>
         <p style={{fontSize: "16px"}}>
           {"If this keeps happening, or you believe this is a bug, please "}
-          <a href={"mailto:hello@nextstrain.org"}>{"get in contact with us."}</a>
+          <a href={"mailto:77e6b779.Defra.onmicrosoft.com@uk.teams.ms"}>{"get in contact with us."}</a>
         </p>
       </div>
     </CenterContent>
