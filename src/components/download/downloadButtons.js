@@ -90,7 +90,7 @@ export const DownloadButtons = ({dispatch, t, tree, entropy, metadata, colorBy, 
           onClick={() => helpers.entropyTSV(dispatch, filePrefix, entropy, mutType)}
         />
       )}*/}
-      <Button
+      {/*<Button
         name="Screenshot (SVG)"
         description="Screenshot of the current nextstrain display in SVG format; CC-BY licensed."
         icon={<PanelsGridIcon width={iconWidth} selected />}
@@ -107,7 +107,7 @@ export const DownloadButtons = ({dispatch, t, tree, entropy, metadata, colorBy, 
           panelLayout,
           relevantPublications
         )}
-      />
+        />*/}
     </>
   );
 };
