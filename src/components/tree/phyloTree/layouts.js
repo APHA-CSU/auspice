@@ -557,7 +557,7 @@ function getTipLabelPadding(params, inViewTerminalNodes) {
 
     inViewTerminalNodes.forEach((d) => {
       if (padBy < d.n.name.length) {
-        padBy = 0.65 * d.n.name.length * fontSize;
+        padBy = 0.75 * d.n.name.length * fontSize;
       }
     });
   }
