@@ -1,6 +1,6 @@
 {
   "name": "auspice",
-  "version": "2.45.0",
+  "version": "2.45.0_APHAr1",
   "description": "Web app for visualizing pathogen evolution",
   "author": "James Hadfield, Trevor Bedford and Richard Neher",
   "license": "AGPL-3.0-only",
@@ -27,10 +27,6 @@
     "heroku-postbuild": "npm run build && npm run get-data",
     "gzip-and-upload": "env bash ./scripts/gzip-and-upload.sh",
     "test": "jest test/*.js",
-    "integration-test": "NODE_ENV=test ENV=dev jest ./test/integration/*.js --config puppeteer.config.js",
-    "integration-test:ci": "start-server-and-test server http://localhost:4000 integration-test",
-    "smoke-test": "NODE_ENV=test ENV=dev jest ./test/smoke-test/urls.test.js --config puppeteer.config.js",
-    "smoke-test:ci": "start-server-and-test server http://localhost:4000 smoke-test",
     "diff-lang": "./scripts/diff-lang.js"
   },
   "jest": {
@@ -134,9 +130,6 @@
     "jest": "^25.1.0",
     "jest-circus": "^25.3.0",
     "jest-image-snapshot": "^3.0.1",
-    "jest-puppeteer": "^4.4.0",
-    "puppeteer": "^2.1.1",
-    "quoted-printable": "^1.0.1",
-    "start-server-and-test": "^1.14.0"
+    "quoted-printable": "^1.0.1"
   }
 }
