@@ -9,14 +9,7 @@ const handleMetadata = async (dispatch, getState, file) => {
   const reader = new FileReader();
   reader.onload = async (event) => {
     try {
-      const XLSX = (await import("xlsx/xlsx.mini")).default;
-      /* Convert accepted dropped file to CSV string */
-      /* If dropped file is Excel workbook, only reads in the data from the first sheet */
-      const workbook = XLSX.read(event.target.result, { type: 'binary', raw: true });
-      const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
-      const sheetAsCsv = XLSX.utils.sheet_to_csv(firstSheet);
-
-      /* All accepted file formats have been converted to CSV string by xlsx */
+      /* Assumes all files are CSV as conversion from xlsx no longer supported */
       /* Use papaparse to parse & interrogate the CSV string */
       const {errors, data, meta} = await parseCsv(sheetAsCsv);
       if (errors.length) {
