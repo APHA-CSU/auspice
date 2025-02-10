@@ -7,8 +7,8 @@
   "repository": "github:nextstrain/auspice",
   "homepage": "https://www.npmjs.com/package/auspice",
   "engines": {
-    "node": "^14 || ^16 || ^18",
-    "npm": "^7 || ^8 || ^9"
+    "node": "^18 || ^20 || ^22",
+    "npm": "^8 || ^9 || ^10"
   },
   "bin": {
     "auspice": "./auspice.js"
@@ -117,10 +117,8 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
-    "bundlesize": "^0.18.1",
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
-    "eslint": "^7.5.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.3.0",
